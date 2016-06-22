@@ -15,9 +15,7 @@ makeCacheMatrix <- function(x = matrix()) {
        getinverse = getinverse)
 }
 
-##This function calculates the inverse of the function if it is not already stored. If it is, then it retrieves it´s
-
-value.
+##This function calculates the inverse of the function if it is not already stored. If it is, then it retrieves it´s value.
 cacheSolve <- function(x, ...) {
   i <- x$getinverse()
   if(!is.null(i)) {
